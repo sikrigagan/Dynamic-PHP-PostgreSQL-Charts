@@ -1,0 +1,91 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.5.6
+-- Dumped by pg_dump version 9.6.0
+
+-- Started on 2017-05-04 02:09:47 IST
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'SQL_ASCII';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 1 (class 3079 OID 12623)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2367 (class 0 OID 0)
+-- Dependencies: 1
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 181 (class 1259 OID 16385)
+-- Name: top_medals; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE top_medals (
+    country_id integer NOT NULL,
+    country_name character varying(150) NOT NULL,
+    medals character varying(50) NOT NULL
+);
+
+
+ALTER TABLE top_medals OWNER TO postgres;
+
+--
+-- TOC entry 2359 (class 0 OID 16385)
+-- Dependencies: 181
+-- Data for Name: top_medals; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO top_medals VALUES (1, 'United States', '29216');
+INSERT INTO top_medals VALUES (2, 'Soviet Union', '4335');
+INSERT INTO top_medals VALUES (3, 'United Kingdom', '2049');
+INSERT INTO top_medals VALUES (4, 'France', '1594');
+INSERT INTO top_medals VALUES (5, 'Germany', '1314');
+INSERT INTO top_medals VALUES (6, 'Hungary', '1228');
+INSERT INTO top_medals VALUES (7, 'Australia', '1211');
+INSERT INTO top_medals VALUES (8, 'Italy', '1075');
+INSERT INTO top_medals VALUES (9, 'Sweden', '1053');
+INSERT INTO top_medals VALUES (10, 'Netherlands', '1021');
+
+
+--
+-- TOC entry 2366 (class 0 OID 0)
+-- Dependencies: 6
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2017-05-04 02:09:47 IST
+
+--
+-- PostgreSQL database dump complete
+--
+
