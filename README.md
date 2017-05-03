@@ -7,7 +7,7 @@ A simple example for creating single-series dynamic chart using FusionCharts PHP
 Steps to run the sample:
 ---
 
-* Import `browsershare.sql` to your Postgres database.
+* Import `olympics_data.backup` database dump to your PostgreSQL database.
 + Update connection string variables for database host, database port, database name, postgres database username and password in `index.php`.
 	+ Please make sure you have enabled `extension=php_pdo_pgsql.dll` and `extension=php_pgsql.dll` in your `php.ini` configuration file.
 
