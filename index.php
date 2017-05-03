@@ -6,10 +6,9 @@
 
 	// establishing DB connection
 	$host= "host=localhost";
+	// add values for below variables according to your system
 	$port= "port=5432";
 	$dbname="dbname=olympics_data";
-
-  // add values for below variables according to your system
 	$dbuser="user=";
 	$dbpwd="password=";
 
@@ -26,6 +25,7 @@
 <html>
    <head>
       <title>FusionCharts | Dynamic Charts with PHP and Postgres</title>
+
       <!-- including style and font css -->
       <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
       <style>
@@ -82,7 +82,6 @@
             "toolTipBorderThickness"=> "2",
             "toolTipBorderAlpha"=> "30",
             "toolTipColor"=> "#4D394B",
-            "toolTipSepChar"=> " : ",
             "plotToolText"=> "<div style='text-align: center; line-height: 1.5;'>\$label<br>\$value Medals<div>",
 
 
