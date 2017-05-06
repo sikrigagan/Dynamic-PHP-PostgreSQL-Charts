@@ -1,6 +1,6 @@
 Dynamic Charts with PHP and PostgreSQL Database
 ===
-A simple example for creating single-series dynamic chart using FusionCharts PHP Wrapper with data from PostgreSQL.
+A simple example for creating single-series dynamic chart using FusionCharts PHP Wrapper with data from PostgreSQL. [Click here to read detailed article on DZone](https://dzone.com/articles/creating-dynamic-charts-with-php-and-postgresql).
 
 ![Dynamic Chart](https://s2.postimg.org/xilccl96x/Screen_Shot_2017-05-03_at_10.08.51_PM.png)
 
